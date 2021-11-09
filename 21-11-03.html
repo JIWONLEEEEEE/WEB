@@ -29,17 +29,22 @@
     <div class="test">
         <input type="button" value="Hi" onclick="alert(':^D')">
     </div>  
-    <!--반전-->
+    <!--버튼-->
     <div class="subject">- 버튼과 액션 -</div>
     <div class="test">
         <input type="button" value="vivid" onclick="
         document.querySelector('body').style.backgroundColor='yellow';
-        document.querySelector('.subject').style.color='blue';
+        document.querySelectorAll('.subject')[0].style.color='blue';
+        document.querySelectorAll('.subject')[1].style.color='blue';
+        document.querySelectorAll('.subject')[2].style.color='blue';
         ">
         <input type="button" value="pastel" onclick="
         document.querySelector('body').style.backgroundColor='beige';
-        document.querySelector('.subject').style.color='lightblue';
+        document.querySelectorAll('.subject')[0].style.color='lightblue';
+        document.querySelectorAll('.subject')[1].style.color='lightblue';
+        document.querySelectorAll('.subject')[2].style.color='lightblue';
         ">
+        <input type="button" value="normal" onClick="history.go(0)">
     </div>  
 </body>
 </html>
